@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto final PRIMER TRIMESTRE Agustín Arcos</title>
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+        #titulo{
+            color:white;
+            text-align: center;
+            font-size:xx-large;
+            font-weight: 100;
+            font-family:'Times New Roman', Times, serif;
+            
+        }
+        #subtitulo {
+            color:azure;
+            text-align: center;
+            font-size: medium;
+            font-weight: 200;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        #portaFoto {
+            padding-top: 5%;
+            width: 50vw;
+            height: 50vh;
+            background-color: black;
+            display: block;
+            margin:auto;
+        }
+
+
+        #fotoMono {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            margin:auto;
+        }
+
+
+        @media screen and (orientation:landscape) {
+            #portaFoto {
+                max-width: 1200px;
+                max-height: 800px;
+            }
+        }
+
+        @media screen and (orientation:portrait) {
+            #portaFoto {
+                max-width: 600px;
+                max-height: 900px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <p id="titulo">Trabajo Agustín Arcos Reyes</p>
+    <p id="subtitulo">Lenguaje de marcas -T1</p>
+
+    <picture id="portaFoto">
+        <source media="(orientation: portrait) and (max-width:1200px)" srcset="./imagen1-1200ancho.heic"
+            type="image/heic" />
+        <source media="(orientation: portrait) and (max-width:1200px)" srcset="./imagen1-1200ancho.webp"
+            type="image/webp" />
+        <source media="(orientation: portrait) and (max-width:1200px)" srcset="./imagen1-1200ancho.jpg"
+            type="image/jpg" />
+        
+            <source media="(orientation: portrait) and (max-width:600px)" srcset="./imagen2-600ancho.heic"
+            type="image/heic" />
+            <source media="(orientation: portrait) and (max-width:600px)" srcset="./imagen2-600ancho.webp"
+            type="image/webp" />
+            <source media="(orientation: portrait) and (max-width:600px)" srcset="./imagen2-600ancho.jpg"
+            type="image/jpg" />
+        
+            <source media="(orientation: landscape) and (max-width:1920px)" srcset="./imagen3.heic"
+            type="image/heic" />
+            <source media="(orientation: landscape) and (max-width:1920px)" srcset="./imagen3.webp"
+            type="image/webp" />
+            <source media="(orientation: landscape) and (max-width:1920px)" srcset="./imagen3.jpg"
+            type="image/jpg" />
+
+            <source media="(orientation: landscape) and (max-width:800px)" srcset="./imagen4-800ancho.heic"
+            type="image/heic" />
+            <source media="(orientation: landscape) and (max-width:800px)" srcset="./imagen4-800ancho.webp"
+            type="image/webp" />
+            <source media="(orientation: landscape) and (max-width:800px)" srcset="./imagen4-800ancho.jpg"
+            type="image/jpg" />
+
+        
+        <img id="fotoMono" alt="Foto de Chimpancé" title="Foto de Chimpance"
+            srcset="./imagen1-1200ancho.jpg" />
+    </picture>
+
+</body>
+
+</html>
